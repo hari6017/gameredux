@@ -10401,12 +10401,18 @@ var _Gameslist = __webpack_require__(96);
 
 var _Gameslist2 = _interopRequireDefault(_Gameslist);
 
+var _Searchbox = __webpack_require__(221);
+
+var _Searchbox2 = _interopRequireDefault(_Searchbox);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
   return _react2.default.createElement(
     'div',
-    null,
+    { className: 'container' },
+    _react2.default.createElement(_Searchbox2.default, null),
+    _react2.default.createElement('hr', null),
     _react2.default.createElement(_Gameslist2.default, null)
   );
 };
@@ -10495,7 +10501,7 @@ var Gameslist = function (_React$Component) {
           _react2.default.createElement(
             'li',
             { className: 'list', key: user.id },
-            _react2.default.createElement('img', { className: 'hari', src: user.thumbnail }),
+            _react2.default.createElement('img', { className: 'hari img-circle', src: user.thumbnail }),
             _react2.default.createElement('br', null),
             _react2.default.createElement(
               'h1',
@@ -10509,7 +10515,7 @@ var Gameslist = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'container' },
+        { className: true },
         x
       );
     }
@@ -10600,6 +10606,42 @@ exports.default = function () {
         thumbnail: "http://free-iso.org/_ld/13/21715159.jpg"
     }, {
         id: 3,
+        name: "cricket",
+
+        description: "Madi likes her dog but it is really annoying.",
+        thumbnail: "http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/01/06/Pictures/ind-vs-nz-4th-odi_0006e040-d3d6-11e6-89f5-e9c163347fb8.jpg"
+    }, {
+        id: 4,
+        name: "supermario",
+
+        description: "Bucky is a React developer and YouTuber",
+        thumbnail: "https://i1.wp.com/sarjishemmo.ltd/videos/wp-content/uploads/sites/3/2017/01/super-mario-maker-did-you-know-gaming-feat-ross-odonovan-game-grumpshtml-youtube-thumbnail.jpg?fit=1200%2C675&ssl=1&resize=350%2C200"
+    }, {
+        id: 5,
+        name: "alladin",
+
+        description: "Joby loves the Packers, cheese, and turtles.",
+        thumbnail: "http://free-iso.org/_ld/13/21715159.jpg"
+    }, {
+        id: 6,
+        name: "cricket",
+
+        description: "Madi likes her dog but it is really annoying.",
+        thumbnail: "http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/01/06/Pictures/ind-vs-nz-4th-odi_0006e040-d3d6-11e6-89f5-e9c163347fb8.jpg"
+    }, {
+        id: 7,
+        name: "supermario",
+
+        description: "Bucky is a React developer and YouTuber",
+        thumbnail: "https://i1.wp.com/sarjishemmo.ltd/videos/wp-content/uploads/sites/3/2017/01/super-mario-maker-did-you-know-gaming-feat-ross-odonovan-game-grumpshtml-youtube-thumbnail.jpg?fit=1200%2C675&ssl=1&resize=350%2C200"
+    }, {
+        id: 8,
+        name: "alladin",
+
+        description: "Joby loves the Packers, cheese, and turtles.",
+        thumbnail: "http://free-iso.org/_ld/13/21715159.jpg"
+    }, {
+        id: 9,
         name: "cricket",
 
         description: "Madi likes her dog but it is really annoying.",
@@ -24102,6 +24144,57 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(17);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Searchbox = function (_React$Component) {
+  _inherits(Searchbox, _React$Component);
+
+  function Searchbox() {
+    _classCallCheck(this, Searchbox);
+
+    return _possibleConstructorReturn(this, (Searchbox.__proto__ || Object.getPrototypeOf(Searchbox)).apply(this, arguments));
+  }
+
+  _createClass(Searchbox, [{
+    key: "render",
+    value: function render() {
+
+      return _react2.default.createElement(
+        "div",
+        { className: true },
+        _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "enter Game name" })
+      );
+    }
+  }]);
+
+  return Searchbox;
+}(_react2.default.Component);
+
+exports.default = Searchbox;
 
 /***/ })
 /******/ ]);

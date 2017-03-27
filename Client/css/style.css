@@ -1,8 +1,18 @@
 .hari
 {
-  width : 200px;
+  position: relative;
+
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
 .list
 {
-  text-align: left;
+  text-align: center;
+}
+.form-control
+{
+  height: 60px;
 }

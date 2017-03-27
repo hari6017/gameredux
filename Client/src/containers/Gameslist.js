@@ -12,13 +12,13 @@ import {connect} from 'react-redux';
      var x = this.props.Games.map((user)=>{
        console.log(user);
 
-     return <div className="col-lg-4"><li className="list" key = {user.id} ><img className= "hari" src= {user.thumbnail} /><br /><h1>{user.name}</h1> </li></div>
+     return <div className="col-lg-4"><li className="list" key = {user.id} ><img className= "hari img-circle" src= {user.thumbnail} /><br /><h1>{user.name}</h1> </li></div>
 
       }
       );
 
   return(
-    <div className= "container">
+    <div className>
     {x}
     </div>
   );
